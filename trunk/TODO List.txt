@@ -1,0 +1,36 @@
+GraphicsMagic TODO List
+
+-- Finished Tasks ---
+
+* Modify all plugins for the coming soon release - version 1.4.5
+
+* Add Unsharp Mask filter
+
+* Improve the Unsharp Mask algorithm to process Threshold parameter properly to make the result is near to Photoshop
+
+* Add magnetic lasso selection tool into project GraphicsMagic
+
+* Improve the Patterns to support semi-transparent images
+
+* Improve the Gradients manager to support semi-transparent images
+
+
+-- Tasks that Under Plan --
+
+* Impove the performance and result of the gradient render algorithems (Under Plan)
+
+* Improve the selection blending algorithms and using proper background (Under plan)
+
+* Create Vector Layer Mask Editor (under plan)
+
+* Improve the Smudge tool algorithm (under plan)
+
+* Apply new coding convention to make it more standard and universal (under plan)
+
+* Change layer panels order with mouse drag and drop (under plan)
+
+* Clear all of the GUI elements, such as reference to Forms.pas, from None-GUI-Related units in GM_LIB.
+
+//////////////
+
+Test for SVN commit...

@@ -1,0 +1,95 @@
+package PegtopCommonD7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Pegtop common components (runtime)'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  vcljpg,
+  vclx;
+
+contains
+  PegtopAlarmSchedules in 'PegtopAlarmSchedules.pas',
+  PegtopBroadcasts in 'PegtopBroadcasts.pas',
+  PegtopColorDialogs in 'PegtopColorDialogs.pas',
+  PegtopColorUtils in 'PegtopColorUtils.pas',
+  PegtopControlEdits in 'PegtopControlEdits.pas',
+  PegtopCursors in 'PegtopCursors.pas',
+  PegtopFileDialogs in 'PegtopFileDialogs.pas',
+  PegtopFileVersionInfo in 'PegtopFileVersionInfo.pas',
+  PegtopFireButtons in 'PegtopFireButtons.pas',
+  PegtopFormMagnets in 'PegtopFormMagnets.pas',
+  PegtopGraphicFileDialogs in 'PegtopGraphicFileDialogs.pas',
+  PegtopHashes in 'PegtopHashes.pas',
+  PegtopLinks in 'PegtopLinks.pas',
+  PegtopMessageReceivers in 'PegtopMessageReceivers.pas',
+  PegtopMethodHashes in 'PegtopMethodHashes.pas',
+  PegtopMutexSections in 'PegtopMutexSections.pas',
+  PegtopNumEdits in 'PegtopNumEdits.pas',
+  PegtopNumForms in 'PegtopNumForms.pas',
+  PegtopPasswordEdits in 'PegtopPasswordEdits.pas',
+  PegtopPriorityQueues in 'PegtopPriorityQueues.pas',
+  PegtopProgressBars in 'PegtopProgressBars.pas',
+  PegtopRadioGroups in 'PegtopRadioGroups.pas',
+  PegtopScrollers in 'PegtopScrollers.pas',
+  PegtopSystemImages in 'PegtopSystemImages.pas',
+  PegtopSysUtils in 'PegtopSysUtils.pas',
+  PegtopThemes in 'PegtopThemes.pas',
+  PegtopWindowHooks in 'PegtopWindowHooks.pas',
+  PegtopDesktopMagnifiers in 'PegtopDesktopMagnifiers.pas',
+  PegtopPanels in 'PegtopPanels.pas',
+  PegtopColorGradients in 'PegtopColorGradients.pas',
+  PegtopTrackBars in 'PegtopTrackBars.pas',
+  PegtopColorControls in 'PegtopColorControls.pas',
+  PegtopColorServices in 'PegtopColorServices.pas',
+  PegtopColorFilters in 'PegtopColorFilters.pas',
+  PegtopNetworkTimeSockets in 'PegtopNetworkTimeSockets.pas',
+  PegtopTimeUtils in 'PegtopTimeUtils.pas',
+  PegtopComboBoxes in 'PegtopComboBoxes.pas',
+  PegtopWaveFileDialogs in 'PegtopWaveFileDialogs.pas',
+  PegtopTextFileDialogs in 'PegtopTextFileDialogs.pas',
+  PegtopStatusBars in 'PegtopStatusBars.pas',
+  PegtopThumbnails in 'PegtopThumbnails.pas',
+  PegtopChunkFiles in 'PegtopChunkFiles.pas',
+  PegtopColorGradientDialogs in 'PegtopColorGradientDialogs.pas',
+  PegtopCPUUtils in 'PegtopCPUUtils.pas',
+  PegtopResampleUtils in 'PegtopResampleUtils.pas',
+  PegtopQualityLabels in 'PegtopQualityLabels.pas',
+  PegtopColorGradientBars in 'PegtopColorGradientBars.pas',
+  PegtopMemoryMappedFiles in 'PegtopMemoryMappedFiles.pas',
+  PegtopColorGradientLists in 'PegtopColorGradientLists.pas',
+  PegtopBufferStreams in 'PegtopBufferStreams.pas',
+  PegtopFileLabels in 'PegtopFileLabels.pas',
+  PegtopCheckBoxes in 'PegtopCheckBoxes.pas',
+  PegtopColorGradientControls in 'PegtopColorGradientControls.pas',
+  PegtopLineLabels in 'PegtopLineLabels.pas',
+  PegtopInterpolationUtils in 'PegtopInterpolationUtils.pas',
+  PegtopVirtualListBoxes in 'PegtopVirtualListBoxes.pas',
+  PegtopLogListBoxes in 'PegtopLogListBoxes.pas',
+  PegtopColorGradientListBoxes in 'PegtopColorGradientListBoxes.pas',
+  PegtopColorGradientFileDialogs in 'PegtopColorGradientFileDialogs.pas';
+
+end.

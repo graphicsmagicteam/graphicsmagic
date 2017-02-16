@@ -1,0 +1,372 @@
+	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{94EFB82A-2DEA-4F6C-B792-F38CA2E4BBDC}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AddNoise\AddNoise.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Antialias\Antialias.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ColorTransform\ColorTransform.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Diagonal\Diagonal.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Emboss\Emboss.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ExponentialBlur\ExponentialBlur.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="FlareFX\FlareFX.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="GaussianBlur\GaussianBlur.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="GlassTile\GlassTile.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="HueCircling\HueCircling.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Illusion\GimpIllusion.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ImageTile\ImageTile.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Mosaic\Mosaic.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="MotionBlur\MotionBlur.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="PencilSketch\PencilSketch.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RandomRipple\RandomRipple.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RemoveRedEye\RemoveRedEye.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Resynthesizer\Resynthesizer.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ReversalFilmNegativeDeveloping\ReversalFilmNegativeDeveloping.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sepia\Sepia.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sharpen\Sharpen.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Solarize\Solarize.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SplitBlur\SplitBlur.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SplitColor\SplitColor.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SplitImage\SplitImage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Squeeze\Squeeze.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Twist\Twist.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="UnsharpMask\UnsharpMask.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Wave\Wave.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AddNoise">
+			<MSBuild Projects="AddNoise\AddNoise.dproj"/>
+		</Target>
+		<Target Name="AddNoise:Clean">
+			<MSBuild Projects="AddNoise\AddNoise.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AddNoise:Make">
+			<MSBuild Projects="AddNoise\AddNoise.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Antialias">
+			<MSBuild Projects="Antialias\Antialias.dproj"/>
+		</Target>
+		<Target Name="Antialias:Clean">
+			<MSBuild Projects="Antialias\Antialias.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Antialias:Make">
+			<MSBuild Projects="Antialias\Antialias.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ColorTransform">
+			<MSBuild Projects="ColorTransform\ColorTransform.dproj"/>
+		</Target>
+		<Target Name="ColorTransform:Clean">
+			<MSBuild Projects="ColorTransform\ColorTransform.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ColorTransform:Make">
+			<MSBuild Projects="ColorTransform\ColorTransform.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Diagonal">
+			<MSBuild Projects="Diagonal\Diagonal.dproj"/>
+		</Target>
+		<Target Name="Diagonal:Clean">
+			<MSBuild Projects="Diagonal\Diagonal.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Diagonal:Make">
+			<MSBuild Projects="Diagonal\Diagonal.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Emboss">
+			<MSBuild Projects="Emboss\Emboss.dproj"/>
+		</Target>
+		<Target Name="Emboss:Clean">
+			<MSBuild Projects="Emboss\Emboss.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Emboss:Make">
+			<MSBuild Projects="Emboss\Emboss.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ExponentialBlur">
+			<MSBuild Projects="ExponentialBlur\ExponentialBlur.dproj"/>
+		</Target>
+		<Target Name="ExponentialBlur:Clean">
+			<MSBuild Projects="ExponentialBlur\ExponentialBlur.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ExponentialBlur:Make">
+			<MSBuild Projects="ExponentialBlur\ExponentialBlur.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="FlareFX">
+			<MSBuild Projects="FlareFX\FlareFX.dproj"/>
+		</Target>
+		<Target Name="FlareFX:Clean">
+			<MSBuild Projects="FlareFX\FlareFX.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="FlareFX:Make">
+			<MSBuild Projects="FlareFX\FlareFX.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="GaussianBlur">
+			<MSBuild Projects="GaussianBlur\GaussianBlur.dproj"/>
+		</Target>
+		<Target Name="GaussianBlur:Clean">
+			<MSBuild Projects="GaussianBlur\GaussianBlur.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="GaussianBlur:Make">
+			<MSBuild Projects="GaussianBlur\GaussianBlur.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="GlassTile">
+			<MSBuild Projects="GlassTile\GlassTile.dproj"/>
+		</Target>
+		<Target Name="GlassTile:Clean">
+			<MSBuild Projects="GlassTile\GlassTile.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="GlassTile:Make">
+			<MSBuild Projects="GlassTile\GlassTile.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="HueCircling">
+			<MSBuild Projects="HueCircling\HueCircling.dproj"/>
+		</Target>
+		<Target Name="HueCircling:Clean">
+			<MSBuild Projects="HueCircling\HueCircling.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="HueCircling:Make">
+			<MSBuild Projects="HueCircling\HueCircling.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="GimpIllusion">
+			<MSBuild Projects="Illusion\GimpIllusion.dproj"/>
+		</Target>
+		<Target Name="GimpIllusion:Clean">
+			<MSBuild Projects="Illusion\GimpIllusion.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="GimpIllusion:Make">
+			<MSBuild Projects="Illusion\GimpIllusion.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ImageTile">
+			<MSBuild Projects="ImageTile\ImageTile.dproj"/>
+		</Target>
+		<Target Name="ImageTile:Clean">
+			<MSBuild Projects="ImageTile\ImageTile.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ImageTile:Make">
+			<MSBuild Projects="ImageTile\ImageTile.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Mosaic">
+			<MSBuild Projects="Mosaic\Mosaic.dproj"/>
+		</Target>
+		<Target Name="Mosaic:Clean">
+			<MSBuild Projects="Mosaic\Mosaic.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Mosaic:Make">
+			<MSBuild Projects="Mosaic\Mosaic.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="MotionBlur">
+			<MSBuild Projects="MotionBlur\MotionBlur.dproj"/>
+		</Target>
+		<Target Name="MotionBlur:Clean">
+			<MSBuild Projects="MotionBlur\MotionBlur.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="MotionBlur:Make">
+			<MSBuild Projects="MotionBlur\MotionBlur.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="PencilSketch">
+			<MSBuild Projects="PencilSketch\PencilSketch.dproj"/>
+		</Target>
+		<Target Name="PencilSketch:Clean">
+			<MSBuild Projects="PencilSketch\PencilSketch.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="PencilSketch:Make">
+			<MSBuild Projects="PencilSketch\PencilSketch.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RandomRipple">
+			<MSBuild Projects="RandomRipple\RandomRipple.dproj"/>
+		</Target>
+		<Target Name="RandomRipple:Clean">
+			<MSBuild Projects="RandomRipple\RandomRipple.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RandomRipple:Make">
+			<MSBuild Projects="RandomRipple\RandomRipple.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RemoveRedEye">
+			<MSBuild Projects="RemoveRedEye\RemoveRedEye.dproj"/>
+		</Target>
+		<Target Name="RemoveRedEye:Clean">
+			<MSBuild Projects="RemoveRedEye\RemoveRedEye.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RemoveRedEye:Make">
+			<MSBuild Projects="RemoveRedEye\RemoveRedEye.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Resynthesizer">
+			<MSBuild Projects="Resynthesizer\Resynthesizer.dproj"/>
+		</Target>
+		<Target Name="Resynthesizer:Clean">
+			<MSBuild Projects="Resynthesizer\Resynthesizer.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Resynthesizer:Make">
+			<MSBuild Projects="Resynthesizer\Resynthesizer.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ReversalFilmNegativeDeveloping">
+			<MSBuild Projects="ReversalFilmNegativeDeveloping\ReversalFilmNegativeDeveloping.dproj"/>
+		</Target>
+		<Target Name="ReversalFilmNegativeDeveloping:Clean">
+			<MSBuild Projects="ReversalFilmNegativeDeveloping\ReversalFilmNegativeDeveloping.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ReversalFilmNegativeDeveloping:Make">
+			<MSBuild Projects="ReversalFilmNegativeDeveloping\ReversalFilmNegativeDeveloping.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Sepia">
+			<MSBuild Projects="Sepia\Sepia.dproj"/>
+		</Target>
+		<Target Name="Sepia:Clean">
+			<MSBuild Projects="Sepia\Sepia.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Sepia:Make">
+			<MSBuild Projects="Sepia\Sepia.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Sharpen">
+			<MSBuild Projects="Sharpen\Sharpen.dproj"/>
+		</Target>
+		<Target Name="Sharpen:Clean">
+			<MSBuild Projects="Sharpen\Sharpen.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Sharpen:Make">
+			<MSBuild Projects="Sharpen\Sharpen.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Solarize">
+			<MSBuild Projects="Solarize\Solarize.dproj"/>
+		</Target>
+		<Target Name="Solarize:Clean">
+			<MSBuild Projects="Solarize\Solarize.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Solarize:Make">
+			<MSBuild Projects="Solarize\Solarize.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SplitBlur">
+			<MSBuild Projects="SplitBlur\SplitBlur.dproj"/>
+		</Target>
+		<Target Name="SplitBlur:Clean">
+			<MSBuild Projects="SplitBlur\SplitBlur.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SplitBlur:Make">
+			<MSBuild Projects="SplitBlur\SplitBlur.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SplitColor">
+			<MSBuild Projects="SplitColor\SplitColor.dproj"/>
+		</Target>
+		<Target Name="SplitColor:Clean">
+			<MSBuild Projects="SplitColor\SplitColor.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SplitColor:Make">
+			<MSBuild Projects="SplitColor\SplitColor.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SplitImage">
+			<MSBuild Projects="SplitImage\SplitImage.dproj"/>
+		</Target>
+		<Target Name="SplitImage:Clean">
+			<MSBuild Projects="SplitImage\SplitImage.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SplitImage:Make">
+			<MSBuild Projects="SplitImage\SplitImage.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Squeeze">
+			<MSBuild Projects="Squeeze\Squeeze.dproj"/>
+		</Target>
+		<Target Name="Squeeze:Clean">
+			<MSBuild Projects="Squeeze\Squeeze.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Squeeze:Make">
+			<MSBuild Projects="Squeeze\Squeeze.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Twist">
+			<MSBuild Projects="Twist\Twist.dproj"/>
+		</Target>
+		<Target Name="Twist:Clean">
+			<MSBuild Projects="Twist\Twist.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Twist:Make">
+			<MSBuild Projects="Twist\Twist.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="UnsharpMask">
+			<MSBuild Projects="UnsharpMask\UnsharpMask.dproj"/>
+		</Target>
+		<Target Name="UnsharpMask:Clean">
+			<MSBuild Projects="UnsharpMask\UnsharpMask.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="UnsharpMask:Make">
+			<MSBuild Projects="UnsharpMask\UnsharpMask.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Wave">
+			<MSBuild Projects="Wave\Wave.dproj"/>
+		</Target>
+		<Target Name="Wave:Clean">
+			<MSBuild Projects="Wave\Wave.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Wave:Make">
+			<MSBuild Projects="Wave\Wave.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AddNoise;Antialias;ColorTransform;Diagonal;Emboss;ExponentialBlur;FlareFX;GaussianBlur;GlassTile;HueCircling;GimpIllusion;ImageTile;Mosaic;MotionBlur;PencilSketch;RandomRipple;RemoveRedEye;Resynthesizer;ReversalFilmNegativeDeveloping;Sepia;Sharpen;Solarize;SplitBlur;SplitColor;SplitImage;Squeeze;Twist;UnsharpMask;Wave"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AddNoise:Clean;Antialias:Clean;ColorTransform:Clean;Diagonal:Clean;Emboss:Clean;ExponentialBlur:Clean;FlareFX:Clean;GaussianBlur:Clean;GlassTile:Clean;HueCircling:Clean;GimpIllusion:Clean;ImageTile:Clean;Mosaic:Clean;MotionBlur:Clean;PencilSketch:Clean;RandomRipple:Clean;RemoveRedEye:Clean;Resynthesizer:Clean;ReversalFilmNegativeDeveloping:Clean;Sepia:Clean;Sharpen:Clean;Solarize:Clean;SplitBlur:Clean;SplitColor:Clean;SplitImage:Clean;Squeeze:Clean;Twist:Clean;UnsharpMask:Clean;Wave:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AddNoise:Make;Antialias:Make;ColorTransform:Make;Diagonal:Make;Emboss:Make;ExponentialBlur:Make;FlareFX:Make;GaussianBlur:Make;GlassTile:Make;HueCircling:Make;GimpIllusion:Make;ImageTile:Make;Mosaic:Make;MotionBlur:Make;PencilSketch:Make;RandomRipple:Make;RemoveRedEye:Make;Resynthesizer:Make;ReversalFilmNegativeDeveloping:Make;Sepia:Make;Sharpen:Make;Solarize:Make;SplitBlur:Make;SplitColor:Make;SplitImage:Make;Squeeze:Make;Twist:Make;UnsharpMask:Make;Wave:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

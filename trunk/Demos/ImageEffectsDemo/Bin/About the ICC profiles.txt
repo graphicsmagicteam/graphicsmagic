@@ -1,0 +1,14 @@
+About the ICC Profiles
+
+   The ICC Profile "USWebCoatedSWOP.icc" is extracted from the compressed file "AdobeICCProfilesWin_bundler.zip". 
+
+   The above compressed file could be found at official Adobe website: 
+   http://www.adobe.com/support/downloads/product.jsp?product=62&platform=windows
+
+   This Adobe ICC Profile is redistributed under the terms of Color Profile Bundling License. Details about the license, please check out the PDF file at the same directory of this text file. 
+
+   The name of the PDF file which is about the license is "Color Profile Bundling License_06.27.07.pdf".
+
+
+
+   

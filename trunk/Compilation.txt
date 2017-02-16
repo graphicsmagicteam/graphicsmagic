@@ -1,0 +1,114 @@
+GraphicsMagic
+ 
+
+Compilation
+-----------
+
+We take Delphi XE6 as example to illustrate how to compile the GraphicsMagic code.
+
+NOTE: We use string '%Graphics32%' to represent the location of
+      the Graphics32 code on your hard drive. And '%GraphicsMagic%'
+      represent the location of GraphicsMagic code.
+
+
+1. Installing Graphics32
+
+   The Graphics32 libary could be downloaded at:
+   https://github.com/graphics32/graphics32
+
+   or check out the Graphics32 SVN repository with TortoiseSVN at: 
+   svn://svn.code.sf.net/p/graphics32/code
+
+   Please installing at least Graphics32 1.9.1 Fixed which is 
+   at the 'branches' directory on the SVN repository. We choose 
+   to install the latest which is in the 'trunk' directory of 
+   Graphics32 repository.  
+
+   In Delphi XE6 IDE, choose Tools -> Options, in Options dialog, 
+   expanding Environment Options -> Delphi Options, choose Library, 
+   adding '%Graphics32%\trunk\Source' to the Library Path. 
+
+   Choose Open menu command and locate at 
+   '%Graphics32%\trunk\Source\Packages\XE6', open GR32.groupproj
+   project group, compile and install GR32_R, and then compile
+   and install GR32_D.
+
+   If everything is OK, the Graphics32 should be installed on 
+   your Delphi IDE.
+
+2. Installing third-party libraries
+
+   We should only install the Preview component which is at
+   '%GraphicsMagic%\externals\Preview'. Please read the ReadMe.html
+   for details about how to install it on Delphi IDE.
+
+   Then, in Options dialog of Delphi IDE, we should include the 
+   following paths in the Library Path:
+
+       %GraphicsMagic%\externals\efg2
+       %GraphicsMagic%\externals\GIFImage
+       %GraphicsMagic%\externals\GR32_PNG
+       %GraphicsMagic%\externals\Graphics32_3rd_Party
+       %GraphicsMagic%\externals\PegtopCommon
+       %GraphicsMagic%\externals\TIFF\Bmp2Tiff
+       %GraphicsMagic%\externals\TIFF\Tiff2Bmp
+
+3. Installing GraphicsMagic package
+
+   Adding the following paths to the Libray Path of Delphi IDE:
+
+       %GraphicsMagic%\trunk\GraphicsMagicLib
+       %GraphicsMagic%\trunk\GraphicsMagicLib\Channels
+       %GraphicsMagic%\trunk\GraphicsMagicLib\Commands
+       %GraphicsMagic%\trunk\GraphicsMagicLib\Layers
+       %GraphicsMagic%\trunk\GraphicsMagicLib\Paths
+       %GraphicsMagic%\trunk\PackageLib
+   
+   Open GraphicsMagic_RSXE6.dpk, compile and install it to Delphi, first.
+   Then compile and install GraphicsMagic_DSGN_RSXE6.dpk. The two dpk files
+   are in directory '$GraphicsMagic$\trunk\Packages'.
+
+4. Compiling the GraphicsMagic
+
+   Close all the opened projects and files. Open GraphicsMagic.dpr which 
+   is at '%GraphicsMagic%\trunk\Source', then try to compile the project.
+
+
+For now, if everything went well, the GraphicsMagic should be compiled and
+run successfully.    
+
+
+NOTE
+----
+
+In directory '%GraphicsMagic%\externals\Graphics32_3rd_Party', there is a
+file named GR32_PolygonsOld.pas which is completely identical to the file
+GR32_Polygons.pas in Graphics32 1.9.1 Fixed. We renamed it and included it 
+with the project is for backward-compatibility to old Graphics32, because 
+all the code of GraphicsMagic for now is completely written with Delphi 7 
+and Graphics32 1.9.1 .
+
+There is also a file called GR32_Misc.pas in the directory 
+'%GraphicsMagic%\externals\Graphics32_3rd_Party'. This file is written by
+Angus Johnson. The original code in this file has referenced to the
+GR32_Polygons.pas of Graphics 1.9.1. If we compile GraphicsMagic with new
+Graphics32, we would be encountered some troubles, because the code of 
+GR32_Polygons.pas in new Graphics32 is completely different than the old one.
+So, we changed the reference in GR32_Misc.pas from GR32_Polygons.pas to 
+GR32_PolygonsOld.pas for dealing with such a question.
+  
+We are very happy that with GR32_PolygonsOld.pas and modified GR32_Misc.pas 
+been included, we can compile the project with new Graphics32.
+
+------------------
+
+If you need any helps for compiling GraphicsMagic, please send us a email: 
+< gmbros@hotmail.com >.
+
+Hope you enjoy the code. Thank you very much. 
+
+------------------
+GraphicsMagic Team
+
+2017-02-15
+

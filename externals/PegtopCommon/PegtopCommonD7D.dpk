@@ -1,0 +1,74 @@
+package PegtopCommonD7D;
+
+{$R *.res}
+{$R 'PegtopAlarmSchedules.dcr'}
+{$R 'PegtopBroadcasts.dcr'}
+{$R 'PegtopColorDialogs.dcr'}
+{$R 'PegtopControlEdits.dcr'}
+{$R 'PegtopFileDialogs.dcr'}
+{$R 'PegtopFireButtons.dcr'}
+{$R 'PegtopFormMagnets.dcr'}
+{$R 'PegtopGraphicFileDialogs.dcr'}
+{$R 'PegtopLinks.dcr'}
+{$R 'PegtopMessageReceivers.dcr'}
+{$R 'PegtopNumEdits.dcr'}
+{$R 'PegtopPasswordEdits.dcr'}
+{$R 'PegtopProgressBars.dcr'}
+{$R 'PegtopScrollers.dcr'}
+{$R 'PegtopSystemImages.dcr'}
+{$R 'PegtopTrackBars.dcr'}
+{$R 'PegtopWindowHooks.dcr'}
+{$R 'PegtopDesktopMagnifiers.dcr'}
+{$R 'PegtopPanels.dcr'}
+{$R 'PegtopNetworkTimeSockets.dcr'}
+{$R 'PegtopWaveFileDialogs.dcr'}
+{$R 'PegtopTextFileDialogs.dcr'}
+{$R 'PegtopThumbnails.dcr'}
+{$R 'PegtopColorGradientDialogs.dcr'}
+{$R 'PegtopColorGradientBars.dcr'}
+{$R 'PegtopColorGradientLists.dcr'}
+{$R 'PegtopFileLabels.dcr'}
+{$R 'PegtopColorControls.dcr'}
+{$R 'PegtopColorGradientControls.dcr'}
+{$R 'PegtopLineLabels.dcr'}
+{$R 'PegtopVirtualListBoxes.dcr'}
+{$R 'PegtopLogListBoxes.dcr'}
+{$R 'PegtopColorGradientListBoxes.dcr'}
+{$R 'PegtopColorGradientFileDialogs.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Pegtop common components (design)'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  vcljpg,
+  DesignIde,
+  PegtopCommonD7,
+  vclx;
+
+contains
+  PegtopCommonReg in 'PegtopCommonReg.pas',
+  PegtopColorGradientEditors in 'PegtopColorGradientEditors.pas';
+
+end.

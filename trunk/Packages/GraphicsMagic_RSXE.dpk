@@ -1,0 +1,76 @@
+package GraphicsMagic_RSXE;
+
+{$R *.res}
+{$R '..\PackageLib\gmGradient_Reg.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $536000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'GraphicsMagic'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  GR32_RSXE1;
+
+contains
+  be_stream in '..\PackageLib\be_stream.pas',
+  gmBlendModes in '..\GraphicsMagicLib\gmBlendModes.pas',
+  gmConstants in '..\GraphicsMagicLib\gmConstants.pas',
+  gmFileFormatList in '..\PackageLib\gmFileFormatList.pas',
+  gmGeometricObjects2D in '..\PackageLib\gmGeometricObjects2D.pas',
+  gmGeometry2D in '..\PackageLib\gmGeometry2D.pas',
+  gmGradient in '..\PackageLib\gmGradient.pas',
+  gmGradient_FileDlgs in '..\PackageLib\gmGradient_FileDlgs.pas',
+  gmGradient_List in '..\PackageLib\gmGradient_List.pas',
+  gmGradient_ListView in '..\PackageLib\gmGradient_ListView.pas',
+  gmGradient_Preview in '..\PackageLib\gmGradient_Preview.pas',
+  gmGradient_Reg in '..\PackageLib\gmGradient_Reg.pas',
+  gmGradient_rwPegtopNew in '..\PackageLib\gmGradient_rwPegtopNew.pas',
+  gmGradient_rwPhotoshop in '..\PackageLib\gmGradient_rwPhotoshop.pas',
+  gmGradient_rwUnversioned in '..\PackageLib\gmGradient_rwUnversioned.pas',
+  gmGradient_rwVer1 in '..\PackageLib\gmGradient_rwVer1.pas',
+  gmGradientEditor in '..\PackageLib\gmGradientEditor.pas',
+  gmGradientRender in '..\PackageLib\gmGradientRender.pas',
+  gmGradientsGrid in '..\PackageLib\gmGradientsGrid.pas',
+  gmGridBased in '..\PackageLib\gmGridBased.pas',
+  gmGridBased_FileDlg in '..\PackageLib\gmGridBased_FileDlg.pas',
+  gmGridBased_List in '..\PackageLib\gmGridBased_List.pas',
+  gmGridBased_ListView in '..\PackageLib\gmGridBased_ListView.pas',
+  gmGridBased_ListView_Layers in '..\PackageLib\gmGridBased_ListView_Layers.pas',
+  gmGridBased_Preview in '..\PackageLib\gmGridBased_Preview.pas',
+  gmMiscFuncs in '..\PackageLib\gmMiscFuncs.pas',
+  gmStopObject in '..\PackageLib\gmStopObject.pas',
+  gmTypes in '..\GraphicsMagicLib\gmTypes.pas',
+  GR32_Add_BlendModes in '..\..\externals\GR32_Add_BlendModes.pas',
+  GR32_Misc in '..\..\externals\GR32_Lines\GR32_Misc.pas',
+  PegtopChunkFiles in '..\..\externals\PegtopCommon\PegtopChunkFiles.pas',
+  PegtopClassHashes in '..\..\externals\PegtopCommon\PegtopClassHashes.pas',
+  PegtopHashes in '..\..\externals\PegtopCommon\PegtopHashes.pas',
+  PegtopColorGradients in '..\..\externals\PegtopCommon\PegtopColorGradients.pas',
+  PegtopColorUtils in '..\..\externals\PegtopCommon\PegtopColorUtils.pas',
+  PegtopColorGradientLists in '..\..\externals\PegtopCommon\PegtopColorGradientLists.pas',
+  PegtopInterpolationUtils in '..\..\externals\PegtopCommon\PegtopInterpolationUtils.pas';
+
+end.

@@ -1,0 +1,211 @@
+GraphicsMagic Professional Change Log
+
+version 1.4.7
+-------------
+
+[ Changed ]
+
+- Program GUI is changed. Introduced "Ghost" style docked panels.
+
+
+[ Improvement ]
+
+- The Marching-Ants animation of selection has been improved.
+
+
+[ Bug Fixed ]
+
+- The rendering of Reflected gradients is not correct at the two ends because the starting and ending colors of the gradients have not take alpha settings into consideration.
+
+
+version 1.4.6
+-------------
+
+[ Added ]
+
+- Magnetic Lasso Tool
+
+- Supports to TIFF
+
+
+
+[ Improvement ]
+
+- Enhanced Gradients Editor
+
+- Supports semi-transparent pattern
+
+- Supports semi-transparent gradients
+
+
+
+[ Bug Fixes ]
+
+- Fixed bugs in Undo/Redo system.
+
+
+
+version 1.4.5
+-------------
+
+[ Changes ]
+
+- The files of GraphicsMagic have been restructured. Moved all the GraphicsMagic-independent files into GraphcisMagicLib directory.
+
+- Added support to FastCode library.
+
+[ Improvements]
+
+- Improved the blending algorithms in GR32_Add_BlendModes.pas to apply Photoshop-style algorithms. Now the layer blending is correct.
+
+- Imporved the blending algorithms for Brush, Eraser, Pencil and Paint Bucket tools.
+
+- Improved the blending algorithms for Fill and Apply Image commands.
+
+- Improved the effect of layer flatten and PNG files output.
+
+[ Bug Fixes]
+
+- Fixed the bug that render effects of Brush and Eraser tools are not correct, especially render on selection. 
+
+
+version 1.4.4
+-------------
+
+[ Changed ]
+
+- Rename the DrawStage() procedure in ImageDrawingLib.pas to DrawCheckerboardPattern().
+- Delete the DrawFrame() method from ChildForm.pas.
+- Modify the OnPaintStage event for imgDrawingArea in ChildForm.Pas to draw thin border for opened images.
+
+- Modify the PathLayerBlend() callback function in ChildForm.pas for getting better display effect of pan paths. To make the paths visible against the white, black or gray background. 
+
+- Modify the DrawCurveEndingHandles() member function of the class TCurveSegmentsList in PenToolsLib.pas, to draw the unselected handle with bsClear brush style, instead of drawing white solid handles.
+
+- Delete the old GR32_PNG.pas that is needed the PNGImage library supports. And use a new GR32_PNG.pas instead which is written by Christian-W. Budde. The new library need the DelphiZLib library support if you cannot compile the project with the zlib.pas that shipped with Delphi.
+
+
+version 1.4.3
+-------------
+
+[Bug list -- All Fixed]
+
+- Undo/Redo operations error when modify pattern for pattern layers.
+- Display error when zoom in/out the viewing scale with selection is created and currently working on mask.
+- Cannot reverse the gradient map in Gradient Map layer.
+- Cannot display the eraser stroke on selection.
+
+[Improvements]
+
+- Speed up the performance of Brush tools, Erasers and Pencil on huge size images.
+
+
+version 1.4.2
+-------------
+
+[Added]
+
+- Added Undo/Redo support for layer merging operations.
+- Added Undo/Redo support for Image Size and Canvas Size menu commands.
+- Added Undo/Redo support for Rotate Canvas menu commands.
+- Added Undo/Redo support for Crop and Optimal Crop menu commands.
+- Added 'Channel Mixer' menu command.
+- Added 'Apply Image' menu command.
+- Added Channel Mixer effect layer support.
+
+[Changed]
+
+- Renamed the AdjustImageContrast() to Contrast32() as an overload function.
+- Renamed the AdjustImageBrightness() to Brightness32() as an overload function.
+- Renamed the RotateImage() to RotateCanvas() in MainForm.pas.
+- Changed the short cut of the Commit Selection menu command to "Ctrl+D".
+- Changed the short cut of the Deselect menu command to "Shift+Ctrl+D".
+- Upgrade the .gmd file format to version 2.
+
+[Deleted]
+
+- Deleted the IntToByte() method from CommonSourceLib.pas.
+- Deleted the IntToHue() method from CommonSourceLib.pas.
+- Deleted the IntToSaturation() method from CommonSourceLib.pas.
+
+[Bug Fixed]
+
+- Fixed the bug that arised when resizing figure layers. 
+- Fixed the bug - could not duplicate selected alpha channel correctly.
+
+
+version 1.4.1
+-------------
+
+[Added]
+
+- OptimalCrop menu command written by Gerd Platl.
+
+- Added a gmd file manager which in GMDLib.pas to load/save the image processing workflows from/to a disk file with extension name ".gmd". 
+
+[Changed]
+
+- Replace the "NormalShape" with "Figure" in all the name of classes, methods and properties in the program source code. 
+
+- Merge the MoveObjectsNodeLib.pas and MoveObjectsListLib.pas into the FigureLib.pas.
+
+- Rename ShapePropertiesDlg to FigurePropertiesDlg.
+
+- Rename SelectShapeListDlg to SelectFiguresDlg.
+
+[Bug Fixed]
+
+- Fixed the thumbnails updating errors for Auto Level, Desaturate and Invert commands. 
+
+
+version 1.4
+-----------
+
+[Added] 
+
+- Added the CovolveLib.pas to the project which is extracted from GIMP 2.6.0.
+
+- Added a "Link to Mask" operation for layer panels. Now, users could determine whether the current layer could link to a mask by click on the chain image that between the layer and mask thumbnails. 
+
+- Added a channel manager to handle variety of channels. 
+
+
+[Changed]
+
+- Used the TBlurSharpenBrush class instead of the TJYQBrush class, used the TGimpConvolver class to make the Blur/Sharpen brush. {in BrushLib.pas}
+
+- The JYQEffectForBrush procedure has been removed from this unit. {in BrushLib.pas} 
+
+- Make the History Brush, Clone Stamp and Pattern Stamp to paint on selection.
+
+- Rename the FMaskCapability boolean field in the TLayerPanel class to FHasMask. 
+
+- Rename the Monochrome*() functions to Desaturate*().
+
+- Rename the AlphaChannelLib.pas to AlphaChannelFuncLib.pas
+
+- Improved the blending effects of Replace Color Command.
+
+- Improved the blending effects of Gradient Tools.
+
+- Improved the blending effects of Paintbucket tool. 
+
+
+[Bug Fixed]
+
+- Fixed the painting error with the Jet Gun tool on selection. You could set the pressure less than 100% and using the Jet Gun tool on selection for checking out this problem with the old source code.
+
+- Fixed the painting error of the Clone Stamp aim flag on TImage32 when the scale property of the TImage32 is not equal to 1. The calculation of the aim flag coordinates in the old source code is wrong.
+
+- Fixed the undo/redo bug for Normal Shape layers. The old problem is that when the user delete a normal shape layer that with a mask, the undo process will not restores the mask for the deleted layer.
+
+- Fixed the incorrect RGB information that displays in Info window.
+
+- Fixed the FinishPolygonalSelection() method error on mask.
+
+- Fixed the bug that the FinishPolygonalSelection() has not create Undo/Redo command.
+
+- Fixed the bug that when the user create a new selection after the old one has been translated/resized, the program will be confused.
+
+- Fixed the blending error when the user swithes among various layers with feathered selection is existed.     
+

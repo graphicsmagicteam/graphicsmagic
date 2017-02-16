@@ -1,0 +1,30 @@
+[DSP upload]
+Filename=Tiff2bmp10.zip
+Replacements=
+Version=1.0
+FileURL=
+Description=This software reads uncompressed Bilevel, GrayScale, ColorPalet and RGBFullColor Images. If you need another kind of TIFF format, feel free to implement it and send your code back to krug@sdm.de
+Delphi 1.0=N
+Delphi 2.0=Y
+Delphi 3.0=Y
+Delphi 4.0=Y
+C++Builder 1.0=N
+File Status=Freeware
+Full Source=Included
+Category=Multimedia
+Note=
+Additional info=
+
+[DSP Support]
+DSP Support=Y
+
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+
+[Uploader]
+Author name=Wolfgang Krug
+Author E-mail=krug@sdm.de
+Author URL=

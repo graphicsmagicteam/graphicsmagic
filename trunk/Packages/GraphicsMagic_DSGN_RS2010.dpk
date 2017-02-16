@@ -1,0 +1,39 @@
+package GraphicsMagic_DSGN_RS2010;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $536000}
+{$DESCRIPTION 'GraphicsMagic Design Time Package'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  GR32_RS2010,
+  GraphicsMagic_RS2010;
+
+contains
+  dsgn_gmGridBased in '..\PackageLib\dsgn_gmGridBased.pas',
+  dsgn_gmGradient in '..\PackageLib\dsgn_gmGradient.pas';
+
+end.

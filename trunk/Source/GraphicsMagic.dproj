@@ -1,0 +1,330 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D87DF1CE-DFBB-411E-A349-C670247E0903}</ProjectGuid>
+        <MainSource>GraphicsMagic.dpr</MainSource>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <ProjectVersion>15.4</ProjectVersion>
+        <Base>True</Base>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <SanitizedProjectName>GraphicsMagic</SanitizedProjectName>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>2052</VerInfo_Locale>
+        <DCC_DependencyCheckOutputName>..\Bin\GraphicsMagic.exe</DCC_DependencyCheckOutputName>
+        <DCC_ExeOutput>..\Bin</DCC_ExeOutput>
+        <DCC_DcuOutput>..\Debug</DCC_DcuOutput>
+        <DCC_UsePackage>vclx;vcl;vclimg;dbrtl;Rave77VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;vcltouch;xmlrtl;dsnap;dsnapcon;TeeUI;TeeDB;Tee;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_100_140;Intraweb_100_140;VclSmp;vclie;websnap;webdsnap;inetdb;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DbxClientDriver;DataSnapServer;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXFirebirdDriver;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_Platform>x86</DCC_Platform>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>GraphicsMagic_Icon2.ico</Icon_MainIcon>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Icon_MainIcon>GraphicsMagic_Icon2.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_UnitSearchPath>..\GraphicsMagicLib;..\GraphicsMagicLib\Channels;..\GraphicsMagicLib\Commands;..\GraphicsMagicLib\Layers;..\GraphicsMagicLib\Paths;..\..\externals\efg2;..\..\externals\GIFImage;..\..\externals\GR32_PNG;..\..\externals\Graphics32_3rd_Party;..\..\externals\PegtopCommon;..\..\externals\TIFF\Bmp2Tiff;..\..\externals\TIFF\Tiff2Bmp;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="MainForm.pas">
+            <Form>frmMain</Form>
+        </DCCReference>
+        <DCCReference Include="ChildForm.pas">
+            <Form>frmChild</Form>
+        </DCCReference>
+        <DCCReference Include="NewFileDlg.pas">
+            <Form>frmCreateNewFile</Form>
+        </DCCReference>
+        <DCCReference Include="BrightnessContrastDlg.pas">
+            <Form>frmBrightnessContrast</Form>
+        </DCCReference>
+        <DCCReference Include="ColorBalanceDlg.pas">
+            <Form>frmColorBalance</Form>
+        </DCCReference>
+        <DCCReference Include="HueSaturationDlg.pas">
+            <Form>frmHueSaturation</Form>
+        </DCCReference>
+        <DCCReference Include="ReplaceColorDlg.pas">
+            <Form>frmReplaceColor</Form>
+        </DCCReference>
+        <DCCReference Include="PaintingBrushPopFrm.pas">
+            <Form>frmPaintingBrush</Form>
+        </DCCReference>
+        <DCCReference Include="PatternNameDlg.pas">
+            <Form>frmPatternName</Form>
+        </DCCReference>
+        <DCCReference Include="ColorSwatchNameDlg.pas">
+            <Form>frmColorSwatchName</Form>
+        </DCCReference>
+        <DCCReference Include="FeatherSelectionDlg.pas">
+            <Form>frmFeatherSelection</Form>
+        </DCCReference>
+        <DCCReference Include="ColorRangeSelectionDlg.pas">
+            <Form>frmColorRangeSelection</Form>
+        </DCCReference>
+        <DCCReference Include="FillDlg.pas">
+            <Form>frmFill</Form>
+        </DCCReference>
+        <DCCReference Include="ThresholdDlg.pas">
+            <Form>frmThreshold</Form>
+        </DCCReference>
+        <DCCReference Include="PosterizeDlg.pas">
+            <Form>frmPosterize</Form>
+        </DCCReference>
+        <DCCReference Include="PatternFillDlg.pas">
+            <Form>frmPatternFill</Form>
+        </DCCReference>
+        <DCCReference Include="PatternsPopFrm.pas">
+            <Form>frmPatterns</Form>
+        </DCCReference>
+        <DCCReference Include="FigurePropertiesDlg.pas">
+            <Form>frmFigureProperties</Form>
+        </DCCReference>
+        <DCCReference Include="SelectFiguresDlg.pas">
+            <Form>frmSelectFigures</Form>
+        </DCCReference>
+        <DCCReference Include="BrushDynamicsPopFrm.pas">
+            <Form>frmBrushDynamics</Form>
+        </DCCReference>
+        <DCCReference Include="EraserAdvOptionsPopFrm.pas">
+            <Form>frmEraserAdvancedOptions</Form>
+        </DCCReference>
+        <DCCReference Include="PaintBucketOptionsPopFrm.pas">
+            <Form>frmPaintBucketAdvancedOptions</Form>
+        </DCCReference>
+        <DCCReference Include="SavePathDlg.pas">
+            <Form>frmSavePath</Form>
+        </DCCReference>
+        <DCCReference Include="CurvesDlg.pas">
+            <Form>frmCurves</Form>
+        </DCCReference>
+        <DCCReference Include="GradientPickerPopFrm.pas">
+            <Form>frmGradientPicker</Form>
+        </DCCReference>
+        <DCCReference Include="RenameGradientDlg.pas">
+            <Form>frmGradientName</Form>
+        </DCCReference>
+        <DCCReference Include="GradientEditorDlg.pas">
+            <Form>frmGradientEditor</Form>
+        </DCCReference>
+        <DCCReference Include="GradientMapDlg.pas">
+            <Form>frmGradientMap</Form>
+        </DCCReference>
+        <DCCReference Include="GradientFillDlg.pas">
+            <Form>frmGradientFill</Form>
+        </DCCReference>
+        <DCCReference Include="ImageSizeDlg.pas">
+            <Form>frmImageSize</Form>
+        </DCCReference>
+        <DCCReference Include="CanvasSizeDlg.pas">
+            <Form>frmCanvasSize</Form>
+        </DCCReference>
+        <DCCReference Include="RotateCanvasDlg.pas">
+            <Form>frmRotateCanvas</Form>
+        </DCCReference>
+        <DCCReference Include="IndexedColorDlg.pas">
+            <Form>frmIndexedColor</Form>
+        </DCCReference>
+        <DCCReference Include="HistogramDlg.pas">
+            <Form>frmHistogram</Form>
+        </DCCReference>
+        <DCCReference Include="PrintOptionsDlg.pas">
+            <Form>frmPrintOptions</Form>
+        </DCCReference>
+        <DCCReference Include="PrintPreviewDlg.pas">
+            <Form>frmPrintPreview</Form>
+        </DCCReference>
+        <DCCReference Include="RichTextEditorForm.pas">
+            <Form>frmRichTextEditor</Form>
+        </DCCReference>
+        <DCCReference Include="DuplicateLayerDlg.pas">
+            <Form>frmDuplicateLayer</Form>
+        </DCCReference>
+        <DCCReference Include="SplashForm.pas">
+            <Form>frmSplash</Form>
+        </DCCReference>
+        <DCCReference Include="AboutDlg.pas">
+            <Form>frmAbout</Form>
+        </DCCReference>
+        <DCCReference Include="LayerPropertiesDlg.pas">
+            <Form>frmLayerProperties</Form>
+        </DCCReference>
+        <DCCReference Include="LevelsToolDlg.pas">
+            <Form>frmLevelsTool</Form>
+        </DCCReference>
+        <DCCReference Include="ImageColorPickerForm.pas">
+            <Form>frmImageColorPicker</Form>
+        </DCCReference>
+        <DCCReference Include="PreferencesDlg.pas">
+            <Form>frmPreferences</Form>
+        </DCCReference>
+        <DCCReference Include="LicenceDlg.pas">
+            <Form>frmLicence</Form>
+        </DCCReference>
+        <DCCReference Include="ChannelOptionsDlg.pas">
+            <Form>frmChannelOptions</Form>
+        </DCCReference>
+        <DCCReference Include="DuplicateChannelDlg.pas">
+            <Form>frmDuplicateChannel</Form>
+        </DCCReference>
+        <DCCReference Include="CreditsDlg.pas">
+            <Form>frmCredits</Form>
+        </DCCReference>
+        <DCCReference Include="ChannelMixerDlg.pas">
+            <Form>frmChannelMixer</Form>
+        </DCCReference>
+        <DCCReference Include="ApplyImageDlg.pas">
+            <Form>frmApplyImage</Form>
+        </DCCReference>
+        <DCCReference Include="InfoForm.pas">
+            <Form>frmInfo</Form>
+        </DCCReference>
+        <DCCReference Include="HistoryForm.pas">
+            <Form>frmHistory</Form>
+        </DCCReference>
+        <DCCReference Include="SwatchForm.pas">
+            <Form>frmSwatch</Form>
+        </DCCReference>
+        <DCCReference Include="ColorForm.pas">
+            <Form>frmColor</Form>
+        </DCCReference>
+        <DCCReference Include="MainDataModule.pas">
+            <Form>dmMain</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="GhostForm.pas">
+            <Form>frmGhost</Form>
+        </DCCReference>
+        <DCCReference Include="LayerForm.pas">
+            <Form>frmLayers</Form>
+        </DCCReference>
+        <DCCReference Include="ChannelForm.pas">
+            <Form>frmChannels</Form>
+        </DCCReference>
+        <DCCReference Include="PathForm.pas">
+            <Form>frmPaths</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">GraphicsMagic.dpr</Source>
+                </Source>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <Language>
+                    <Language Name="ProjectLang">$00000804</Language>
+                </Language>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">2052</VersionInfo>
+                    <VersionInfo Name="CodePage">936</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k200.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp200.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

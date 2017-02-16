@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.pas,F:\SVN\GraphicsMagic\externals\GR32_Add_BlendModes.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.pas,F:\SVN\GraphicsMagic\externals\Graphics32_3rd_Party\GR32_Add_BlendModes.pas=</Transaction>
+    <Transaction>2017/02/14 21:12:42.000.125,D:\SVN\graphicsmagic\trunk\Packages\GraphicsMagic_RS2010.dproj=D:\SVN\graphicsmagic\trunk\Packages\GraphicsMagic_RSXE6.dproj</Transaction>
+    <Transaction>2017/02/14 21:13:11.000.880,=GR32_RSXE6.dcp</Transaction>
+    <Transaction>2017/02/14 21:28:54.000.631,=GR32_R.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

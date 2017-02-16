@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/02/14 21:14:59.000.802,D:\SVN\graphicsmagic\trunk\Packages\GraphicsMagic_DSGN_RS2010.dproj=D:\SVN\graphicsmagic\trunk\Packages\GraphicsMagic_DSGN_RSXE6.dproj</Transaction>
+    <Transaction>2017/02/14 21:15:38.000.423,=GR32_RSXE6.dcp</Transaction>
+    <Transaction>2017/02/14 21:16:04.000.349,=GraphicsMagic_RSXE6.dcp</Transaction>
+    <Transaction>2017/02/14 21:30:41.000.629,=GR32_D.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
